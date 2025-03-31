@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Staff Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://www.transparenttextures.com/patterns/bananas.png');
+            background-color: #ffeb3b;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            margin: auto;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+        }
+        textarea, input {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Discord Staff Application</h1>
+        <form action="#" method="POST">
+            <h2>Basic Information</h2>
+            <label>Discord Username:</label>
+            <input type="text" name="username" required>
+
+            <label>Age:</label>
+            <input type="number" name="age" required>
+
+            <label>Timezone:</label>
+            <input type="text" name="timezone" required>
+
+            <label>How long have you been in this server?</label>
+            <input type="text" name="server_time" required>
+
+            <label>Past experience as a staff member?</label>
+            <textarea name="experience" rows="3"></textarea>
+
+            <h2>Availability</h2>
+            <label>How often can you be online per day?</label>
+            <input type="text" name="availability" required>
+
+            <label>What times are you usually available?</label>
+            <input type="text" name="times_available" required>
+
+            <h2>Skills & Qualifications</h2>
+            <label>Why do you want to be a staff member?</label>
+            <textarea name="why_staff" rows="3" required></textarea>
+
+            <label>What qualities make you a good staff member?</label>
+            <textarea name="qualities" rows="3" required></textarea>
+
+            <label>Are you familiar with Discord moderation tools?</label>
+            <textarea name="moderation_tools" rows="3"></textarea>
+
+            <h2>Scenario Questions</h2>
+            <label>1. A user is spamming in chat. How would you handle it?</label>
+            <textarea name="spam_solution" rows="3" required></textarea>
+
+            <label>2. Two members are arguing. What would you do?</label>
+            <textarea name="argue_solution" rows="3" required></textarea>
+
+            <label>3. A user accuses a staff member of bias. How do you respond?</label>
+            <textarea name="bias_solution" rows="3" required></textarea>
+
+            <h2>Final Questions</h2>
+            <label>Do you agree to follow server rules?</label>
+            <input type="text" name="agree_rules" required>
+
+            <label>Do you have a microphone and are you comfortable speaking in meetings?</label>
+            <input type="text" name="microphone" required>
+
+            <label>Anything else you’d like to add?</label>
+            <textarea name="additional_info" rows="3"></textarea>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+</body>
+</html>
+
